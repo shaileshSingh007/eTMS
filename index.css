@@ -13,19 +13,39 @@ body{
     position: absolute; left: 0%; top: 0%; background:url(./firstpage.png) no-repeat center/100% 100%;
 }
 
+
 #loader{
+    width:100px;
+    height:100px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    background:linear-gradient(45deg,white,#ECECF2);
+    z-index: 50;
+    border-radius:1vh;
+    box-shadow:0 0 5px grey;
+}
+#loader::after{
+    content:"";
     width:50px;
     height:50px;
-    background:rgba(255,255,255,0.1);
-    border:5px solid rgba(255,255,255,0.5);
-    border-bottom:5px solid rgba(255,255,255,0.7);
-    border-left:5px solid rgba(255,255,255,0.3);
-    border-right:5px solid rgba(255,255,255,0.3);
-    border-top:5px solid rgba(255,255,255,0.3);
+    background: conic-gradient(rgba(62, 62, 62, 1),transparent);
     border-radius: 50%;
     animation: loaderA 1s infinite linear;
     position: absolute; left: 50%; top:50%; transform: translate(-50%,-50%) rotate(0deg);
     z-index:50;
+}
+
+#loader::before{
+    content:"";
+    width:43px;
+    height:43px;
+    background: white;
+    border-radius: 50%;
+    animation: loaderA 1s infinite linear;
+    position: absolute; left: 50%; top:50%; transform: translate(-50%,-50%) rotate(0deg);
+    z-index:52;
 }
 
 @keyframes loaderA {
