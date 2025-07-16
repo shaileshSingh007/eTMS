@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="color-scheme" content="light only">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="white">
+<meta name="apple-mobile-web-app-title" content="eTMS">
+<meta name="theme-color" content="#333545">
+
+<link rel="apple-touch-icon" sizes="180x180" href="./logo.jpeg">
+<link rel="apple-touch-icon" sizes="120x120" href="../logo.jpeg">
+
+<meta content="165665113451029" property="fb:app_id">
+<meta http-quiv="x-ua-compatible" content="ie=edge">
+<meta property="og:site_name" content="BookMyShow">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+      <div id="mainC"></div>
+      <div id="loader"></div>
+      <div id="secPage">
+          <div id="secPHead"><span>Welcome to</span><span><b style="margin-right:-5px;">TCS e</b><b>TMS</b></span></div>
+          <div id="selectText">PLEASE SELECT YOUR RIDE SERVICE</div>
+          <div id="rideOps">
+              <div id="busRide"><i class="fa-solid fa-bus"></i> <span>Bus Service</span></div>
+              <div id="CabRide"><i class="fa-solid fa-car"></i> <span>Cab Service</span></div>
+              <div id="GeoCode"><i class="fa-solid fa-location-dot"></i> <span>Geocode yourself</span></div>
+          </div>
+      </div>
+      
+      <div id="popUp">
+         <div id="innerPopUp"></div>
+      </div>
+      
+      <div id="passPage">
+        <div id="header">
+           <i id="menu" class="fa-solid fa-bars"></i>
+           <span>Digital bus pass</span>
+           <i id="notif" class="fa-solid fa-bell"></i>
+        </div>
+        <div id="passDet">
+            <div id="topBox">
+                <div id="loc1">Thane Stn. E Kopari</div>
+                <div id="dualArrow">&#8652;</div>
+                <div id="loc2">TCS Olympus</div>
+                <div id="bottomP"></div>
+            </div>
+            <div id="botomCont">
+  <div id="row0">Confirmed Bus Pass</div>
+           
+            <div id='botomBox'>
+              <div id="row1">
+                <span>Name</span>
+                <span>Employee ID</span>
+              </div>
+              <div id="row2">
+                <span>SHAILESH SINGH</span>
+                <span>2816918</span>
+              </div>
+              <div id="row3">
+                <span>Bus Stop Name</span>
+                <span>Route Type</span>
+              </div>
+              <div id="row4">
+                <span>Thane Stn. E Kopari</span>
+                <span>Both</span>
+              </div>
+              <div id="row5">
+                <span>Start Date</span>
+                <span>End Date</span>
+              </div>
+              <div id="row6">
+                <span>1st Jul 2025</span>
+                <span>31st Jul 2025</span>
+              </div>
+              <div id="row7"></div>
+            </div>
+            <div id="qrBox"></div>
+            </div>
+            <div id="togBut">
+              View QR
+            </div>
+            <div id="logobox"></div>
+        </div>
+      </div>
+      
+      <div id="menuDiv">
+          <div id="nameD">Hi, Shailesh Singh</div>
+          <div id="btnD">
+             <div id="goHome">
+               <i class="fa-solid fa-house"></i>
+               <span>Home</span>
+               </div>
+             <div id="applyPass"><i class="fa-solid fa-bus"></i><span>Apply bus pass</span></div>
+             <div id="status"><i class="fa-solid fa-pen-to-square"></i><span>Request status</span></div>
+             <div id="backTo"><i class="fa-solid fa-gears"></i><span>Back to home page</span></div>
+             <div id="logOut"><i class="fa-solid fa-right-from-bracket"></i></i><span>Logout</span></div>
+          </div>
+      </div>
+      
+      <div id="reqStatusP">
+          <div id="reqHead">
+             <i class="fa-solid fa-chevron-left"></i>
+             <span id="back">Back</span>
+             <b>Bus Pass Request Status</b>
+          </div>
+          <div id="reqBody"></div>
+          
+      </div>
+      
+      <div id="allExist">
+         <div></div>
+      </div>
+      <div id="createBusPass">
+         
+         <input type="text" name="nameInp" id="nameInp" value="" placeholder="enter your name" />
+         <input type="text" name="" id="rollInp" value="" placeholder="Eneter Your roll No."/>
+         <select name="" id="stationInp">
+           
+         </select>
+         <select name="" id="timeInp"></select>
+         <button id="submitInp" type="submit">Submit</button>
+         <button id="cancelbt" type="submit">Cancel</button>
+      </div>
+      
+      
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+      <script src="index.js"></script>
+      
+
+</body>
+</html>
+
+
+     
